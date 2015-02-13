@@ -2,7 +2,6 @@
 // Excercise:
 // - make these tabs work when you click them
 ////////////////////////////////////////////////////////////////////////////////
-<<<<<<< HEAD
 
 var React = require('react');
 var App = React.createClass({
@@ -126,7 +125,6 @@ React.render(<App />, document.body);
 //btn.onclick = () => alert('hello, easy peasy wasn\'t it?');
 //document.body.appendChild(btn);
 
->>>>>>> master
 
 //var React = require('react');
 //var assign = require('react/lib/Object.assign');

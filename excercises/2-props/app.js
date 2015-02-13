@@ -52,7 +52,7 @@ var Gravatar = React.createClass({
 
   getDefaultProps () {
     return {
-      size: 46
+      size: 38
     };
   },
 

@@ -4,6 +4,21 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 var React = require('react');
+<<<<<<< HEAD
+=======
+var App = React.createClass({
+  render () {
+    return (
+      <di>
+        don't want more words I can't spell like exercise.
+      </div>
+    );
+  }
+});
+
+=======
+var React = require('react');
+>>>>>>> 4f5b749a217a5f3ed4a6c9b4ab354a08c26707de
 
 var ContentToggle = React.createClass({
   getInitialState () {
@@ -27,6 +42,7 @@ var ContentToggle = React.createClass({
   },
 
   render () {
+<<<<<<< HEAD
     var summaryClassName = "ContentToggle__Summary";
     if (this.state.showDetails)
       // there needs to be a space in between the quote and the ClassName
@@ -35,6 +51,11 @@ var ContentToggle = React.createClass({
     return (
       <div className="ContentToggle">
         <div onClick={this.toggle} className={summaryClassName}>
+=======
+    return (
+      <div className="ContentToggle">
+        <div onClick={this.toggle} className="ContentToggle__Summary">
+>>>>>>> 4f5b749a217a5f3ed4a6c9b4ab354a08c26707de
           {this.props.summary}
         </div>
         <div className="ContentToggle__Details">

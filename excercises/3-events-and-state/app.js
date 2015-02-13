@@ -27,9 +27,14 @@ var ContentToggle = React.createClass({
   },
 
   render () {
+    var summaryClassName = "ContentToggle__Summary";
+    if (this.state.showDetails)
+      // there needs to be a space in between the quote and the ClassName
+      // for the arrow to show up
+      summaryClassName += " ContentToggle__Summary--open";
     return (
       <div className="ContentToggle">
-        <div onClick={this.toggle} className="ContentToggle__Summary">
+        <div onClick={this.toggle} className={summaryClassName}>
           {this.props.summary}
         </div>
         <div className="ContentToggle__Details">

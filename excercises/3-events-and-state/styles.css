@@ -13,3 +13,11 @@
   content: '▾';
 }
 
+button {
+  padding: 1em 3em;
+  border-radius: 3px;
+  border: #777 1px solid;
+  background: transparent;
+  margin: 1em;
+}
+

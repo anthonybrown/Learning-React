@@ -6,6 +6,7 @@
 var React = require('react');
 
 var ContentToggle = React.createClass({
+  // creating state here
   getInitialState () {
     return {
       showDetails: true

@@ -6,6 +6,14 @@
 var React = require('react');
 
 var ContentToggle = React.createClass({
+  renderDetails () {
+    var showStuff = false;
+      if (showStuff)
+        return this.props.children;
+      else
+        return null;
+  },
+
   render () {
     return (
       <div className='ContentToggle'>
@@ -13,7 +21,7 @@ var ContentToggle = React.createClass({
           {this.props.summary}
         </div>
         <div className='ContentToggle__Details'>
-          {this.props.children}
+          {this.renderDetails()}
         </div>
       </div>
     );

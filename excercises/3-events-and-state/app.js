@@ -6,18 +6,33 @@
 var React = require('react');
 
 var ContentToggle = React.createClass({
+  getInitialState () {
+    return {
+      showDetails: true
+    };
+  },
+
   renderDetails () {
-    var showStuff = false;
+    var showStuff = this.state.showDetails;
       if (showStuff)
         return this.props.children;
       else
         return null;
   },
 
+  toggle () {
+    this.setState({
+      showDetails: !this.state.showDetails
+    });
+  },
+
   render () {
+    var summaryClassName = 'ContentToggle__Summary';
+    if (this.state.showDetails)
+      summaryClassName += ' ContentToggle__Summary--open'
     return (
       <div className='ContentToggle'>
-        <div className='ContentToggle__Summary'>
+        <div onClick={this.toggle} className={summaryClassName}>
           {this.props.summary}
         </div>
         <div className='ContentToggle__Details'>

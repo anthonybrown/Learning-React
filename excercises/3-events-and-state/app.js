@@ -8,9 +8,13 @@ var React = require('react');
 var ContentToggle = React.createClass({
   render () {
     return (
-      <div>
-        <div>{this.props.summary}</div>
-        <div>{this.props.children}</div>
+      <div className='ContentToggle'>
+        <div className='ContentToggle__Summary'>
+          {this.props.summary}
+        </div>
+        <div className='ContentToggle__Details'>
+          {this.props.children}
+        </div>
       </div>
     );
   }

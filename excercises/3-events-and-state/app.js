@@ -4,63 +4,13 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 var React = require('react');
-<<<<<<< HEAD
-=======
-var App = React.createClass({
-  render () {
-    return (
-      <di>
-        don't want more words I can't spell like exercise.
-      </div>
-    );
-  }
-});
-
-=======
-var React = require('react');
->>>>>>> 4f5b749a217a5f3ed4a6c9b4ab354a08c26707de
 
 var ContentToggle = React.createClass({
-  getInitialState () {
-    return {
-      showDetails: true
-    };
-  },
-
-  renderDetails () {
-  var showStuff = this.state.showDetails;
-    if (showStuff)
-      return this.props.children;
-    else
-      return null;
-  },
-
-  toggle () {
-    this.setState({
-      showDetails: !this.state.showDetails
-    })
-  },
-
   render () {
-<<<<<<< HEAD
-    var summaryClassName = "ContentToggle__Summary";
-    if (this.state.showDetails)
-      // there needs to be a space in between the quote and the ClassName
-      // for the arrow to show up
-      summaryClassName += " ContentToggle__Summary--open";
     return (
-      <div className="ContentToggle">
-        <div onClick={this.toggle} className={summaryClassName}>
-=======
-    return (
-      <div className="ContentToggle">
-        <div onClick={this.toggle} className="ContentToggle__Summary">
->>>>>>> 4f5b749a217a5f3ed4a6c9b4ab354a08c26707de
-          {this.props.summary}
-        </div>
-        <div className="ContentToggle__Details">
-          {this.renderDetails()}
-        </div>
+      <div>
+        <div>{this.props.summary}</div>
+        <div>{this.props.children}</div>
       </div>
     );
   }
@@ -70,15 +20,9 @@ var App = React.createClass({
   render () {
     return (
       <div>
-        <ContentToggle summary="Jerked chicken">
+        <ContentToggle summary='Jerked Chicken'>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </ContentToggle>
       </div>
@@ -86,7 +30,8 @@ var App = React.createClass({
   }
 });
 
-React.render(<App />, document.body);
+React.render(<App/>, document.body);
+
 
 /*
  *

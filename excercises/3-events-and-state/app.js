@@ -48,9 +48,15 @@ var App = React.createClass({
   render () {
     return (
       <div>
-        <ContentToggle summary='Jerked Chicken'>
+        <ContentToggle summary='Thoughts on JavaScript Frameworks'>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            React is an amazing new JavaScript UI framework
+            form Facebook. It's incrediably easy to learn
+            if you already know JavaScript. It's ver declaritive
+            and easy to follow and understand what your UI is doing
+            at all times. Coupled with Flux, this is my all time
+            favorite JavaScript framework to work with period. Good-
+            bye Backbone.js and Ember.js and hello React.js!
           </p>
         </ContentToggle>
       </div>

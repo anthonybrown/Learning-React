@@ -30,7 +30,7 @@ var ContentToggle = React.createClass({
   render () {
     var summaryClassName = 'ContentToggle__Summary';
     if (this.state.showDetails)
-      summaryClassName += ' ContentToggle__Summary--open'
+      summaryClassName += ' ContentToggle__Summary--open';
     return (
       <div className='ContentToggle'>
         <div onClick={this.toggle} className={summaryClassName}>

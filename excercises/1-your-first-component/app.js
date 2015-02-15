@@ -12,7 +12,7 @@ var React = require('react');
 var sortBy = require('sort-by');
 
 var DATA = {
-  title: 'Menu',
+  title: 'Menu Items',
   items: [
     { id: 1, name: 'tacos', type: 'mexican' },
     { id: 2, name: 'burrito', type: 'mexican' },
